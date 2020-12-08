@@ -1,0 +1,63 @@
+:root {
+  --background-color: #2C666E;
+  --card-background: #F0EDEE;
+  --card-font: #0A090C;
+  --card-border: #4C6663;
+  --button-background: #07393C;
+  --button-font: #F0EDEE;
+  --button-border: #07393C;
+}
+
+*  {
+  margin: 5px;
+}
+
+body {
+  background-color: var(--background-color);
+	font-family:  Tahoma;
+	font-size: 16px;
+  text-align: center;
+}
+
+.card {
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--card-background);
+  margin: 50px auto;
+  width: 50%;
+  height: 250px;
+  padding-top: 25px;
+}
+
+.cardText {
+  color: var(--card-font);
+}
+
+#termCard {
+  line-height: 225px;
+}
+
+#definitionCard {
+  line-height: 100px;
+}
+
+#termCard p{
+    font-size:80px;
+}
+
+#definition1{
+    font-size:60px;
+}
+#definition2 {
+    font-size: 30px;
+}
+button {
+  font-family:  Tahoma;
+  font-size: 20px;
+  background-color: var(--button-background);
+  color: var(--button-font);
+  border-color: var(--button-border);
+  padding: 20px 60px;
+  margin: 15px 20px;
+  width: 200px
+}
