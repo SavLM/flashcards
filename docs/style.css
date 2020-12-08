@@ -27,6 +27,7 @@ body {
   width: 60%;
   height: 250px;
   padding-top: 25px;
+  overflow: hidden;
 }
 
 .cardText {
