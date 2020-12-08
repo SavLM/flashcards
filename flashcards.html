@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Yo Self</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div class="card" id="termCard" style="visibility:hidden">
+        <div class="cardText">
+          <p id="term"></p>
+        </div>
+      </div>
+      <div class="card" id="definitionCard" style="visibility:hidden">
+        <div class="cardText">
+          <p id="definition1"></p>
+          <p id="definition2"></p>
+        </div>
+      </div>
+      <button id="previousButton" onclick="previousCard()">Previous</button>
+      <button id="flipButton" onclick="flip()">Flip</button>
+      <button id="nextButton" onclick="nextCard()">Next</button>
+      <br>
+      <button id="shuffleButton" onclick="shuffle()">Shuffle</button>
+    </div>
+  </body>
+</html>
