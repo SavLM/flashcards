@@ -503,6 +503,7 @@ var index = 0;
 
 function shuffle() {
   document.getElementById("shuffleButton").innerHTML = "Shuffle";
+  document.getElementById("shuffleButton").value = "Shuffle";
   document.getElementById("termCard").style.visibility='visible';
   document.getElementById("definitionCard").style.visibility='hidden';
   if(deck.length<=0){return;}
