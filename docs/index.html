@@ -9,8 +9,9 @@
   </head>
   <body>
     <div class="main">
+      <p><button id="shuffleButton" onclick="shuffle()">Start</button></p>
       <div class="card" id="termCard" style="visibility:hidden">
-        <div class="cardText">
+        <div class="cardText" onclick="flip()">
           <p id="term"></p>
         </div>
       </div>
@@ -20,9 +21,7 @@
           <p id="definition2"></p>
         </div>
       </div>
-      <p><button id="flipButton" onclick="flip()">Flip</button><p>
       <p><button id="previousButton" onclick="previousCard()">Previous</button><button id="nextButton" onclick="nextCard()">Next</button></p>
-      <p><button id="shuffleButton" onclick="shuffle()">Shuffle</button></p>
     </div>
   </body>
 </html>
