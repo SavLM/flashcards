@@ -19,12 +19,17 @@ body {
   text-align: center;
 }
 
+.main{
+  width: 100%;
+}
+
 .card {
-  display: block;
+  display: inline-block;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: var(--card-background);
-  margin: 50px auto;
-  width: 60%;
+  margin: 10px auto;
+  min-width: 60%;
+  width: auto;
   height: 250px;
   padding-top: 25px;
   overflow: hidden;
@@ -52,6 +57,8 @@ body {
 #definition2 {
     font-size: 30px;
 }
+
+
 button {
   font-family:  Tahoma;
   font-size: 20px;
@@ -59,6 +66,18 @@ button {
   color: var(--button-font);
   border-color: var(--button-border);
   padding: 20px 60px;
-  margin: 15px 20px;
+  margin: 5px 20px;
   width: 200px
+}
+
+@media (max-width: 600px) {
+  #definition1{
+      font-size:30px;
+  }
+  #definition2 {
+      font-size: 15px;
+  }
+  button {
+    width: 50%;
+  }
 }
