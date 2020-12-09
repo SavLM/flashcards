@@ -65,7 +65,7 @@ button {
   background-color: var(--button-background);
   color: var(--button-font);
   border-color: var(--button-border);
-  padding: 20px 40px;
+  padding: 20px 0px;
   margin: 5px 20px;
   width: 200px
 }
