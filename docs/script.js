@@ -505,6 +505,7 @@ function shuffle() {
   document.getElementById("shuffleButton").innerHTML = "Shuffle";
   document.getElementById("shuffleButton").value = "Shuffle";
   document.getElementById("termCard").style.visibility='visible';
+  document.getElementById("cardCount").style.visibility='visible';
   document.getElementById("definitionCard").style.visibility='hidden';
   if(deck.length<=0){return;}
   var tempDeck = [ ...deck ];
@@ -527,6 +528,7 @@ function shuffle() {
     document.getElementById("definitionCard").style.visibility='hidden';
     document.getElementById("definition1").innerHTML = shuffledDeck[index].definition1;
     document.getElementById("definition2").innerHTML = "Sounds like: " + shuffledDeck[index].definition2;
+    document.getElementById("cardCount").innerHTML = 1 + " / " + shuffledDeck.length;
 
 }
 
@@ -546,6 +548,7 @@ function nextCard() {
       document.getElementById("definitionCard").style.visibility='hidden';
       document.getElementById("definition1").innerHTML = shuffledDeck[index].definition1;
       document.getElementById("definition2").innerHTML = "Sounds like: " + shuffledDeck[index].definition2;
+      document.getElementById("cardCount").innerHTML = (1 + index) + " / " + shuffledDeck.length;
     }
 }
 
@@ -561,6 +564,7 @@ function previousCard() {
     document.getElementById("term").innerHTML = shuffledDeck[index].term;
     document.getElementById("definition1").innerHTML = shuffledDeck[index].definition1;
     document.getElementById("definition2").innerHTML = "Sounds like: " + shuffledDeck[index].definition2;
+    document.getElementById("cardCount").innerHTML = (1 + index) + " / " + shuffledDeck.length;
 }
 
 function flip() {
