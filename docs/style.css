@@ -44,7 +44,7 @@ body {
 }
 
 #definitionCard {
-  line-height: 100px;
+  line-height: 210px;
 }
 
 #termCard p{
@@ -53,9 +53,6 @@ body {
 
 #definition1{
     font-size:60px;
-}
-#definition2 {
-    font-size: 30px;
 }
 
 
@@ -78,9 +75,6 @@ button {
   }
   #definition1{
       font-size:30px;
-  }
-  #definition2 {
-      font-size: 15px;
   }
   button {
     width: 50%;
