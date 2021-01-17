@@ -52,7 +52,7 @@ var deck = [
     {term:"	학생	",definition1:"	student	"},
     {term:"	영회	",definition1:"	movie	"},
     {term:"	재미	",definition1:"	fun	"},
-    {term:"	맛	",definition1:"	bad	"},
+    {term:"	맛	",definition1:"	flavor	"},
     {term:"	멋	",definition1:"	coolness	"},
     {term:"	의미	",definition1:"	meaning	"},
     {term:"	매력	",definition1:"	charm	"},
