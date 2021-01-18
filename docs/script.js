@@ -67,7 +67,7 @@ var deck = [
     {term:"	안녕	",definition1:"	Hi	"},
     {term:"	환영합니다	",definition1:"	Welcome	"},
     {term:"	안녕하세요	",definition1:"	Hello	"},
-    {term:"	만나사 반갑습니다	",definition1:"	Nice to meet you	"},
+    {term:"	만나서 반갑습니다	",definition1:"	Nice to meet you	"},
     {term:"	안녕하십니까	",definition1:"	hello	"},
     {term:"	죄송합니다	",definition1:"	I'm sorry	"},
     {term:"	괜찮습니다	",definition1:"	I'm okay/It's fine	"},
