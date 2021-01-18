@@ -58,7 +58,21 @@ var deck = [
     {term:"	매력	",definition1:"	charm	"},
     {term:"	인기가	",definition1:"	popularity	"},
     {term:"	출신입니다	",definition1:"	am from	"},
-    {term:"	가수	",definition1:"	singer	"}
+    {term:"	가수	",definition1:"	singer	"},
+    {term:"	우정	",definition1:"	friendship	"},
+    {term:"	네	",definition1:"	yes	"},
+    {term:"	이름	",definition1:"	name	"},
+    {term:"	고맙습니다	",definition1:"	thank you	"},
+    {term:"	고마워	",definition1:"	thanks!	"},
+    {term:"	안녕	",definition1:"	Hi	"},
+    {term:"	환영합니다	",definition1:"	Welcome	"},
+    {term:"	안녕하세요	",definition1:"	Hello	"},
+    {term:"	만나사 반갑습니다	",definition1:"	Nice to meet you	"},
+    {term:"	안녕하십니까	",definition1:"	hello	"},
+    {term:"	죄송합니다	",definition1:"	I'm sorry	"},
+    {term:"	괜찮습니다	",definition1:"	I'm okay/It's fine	"},
+    {term:"	감사합니다	",definition1:"	thank you	"},
+    {term:"	실례합니다	",definition1:"	excuse me	"}
   ];
 
 var shuffledDeck = [];
