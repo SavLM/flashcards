@@ -6,8 +6,8 @@ function tryingsomething() {
     jQuery.get('terms.txt', function(data) {
       deck = data.split("\n");
     });
-    //console.log("deck:");
-    //console.table(deck);
+    console.log("deck:");
+    console.table(deck);
     //alert(deck[1]);
 }
 
