@@ -7,7 +7,7 @@ var shuffledDeck = [];
 var index = 0;
 
 function tryingsomething() {
-    jQuery.get('random.txt', function(data) {
+    jQuery.get('terms.txt', function(data) {
       deck = data.val().split("\n");
     });
 }
