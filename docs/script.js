@@ -21,6 +21,7 @@ function shuffle() {
   document.getElementById("definitionCard").style.visibility='hidden';
   if(deck.length<=0){return;}
   var tempDeck = [ ...deck ];
+  tempDeck.pop();
   shuffledDeck = [];
   while (tempDeck.length>0){
     console.log("doing something");
