@@ -4,8 +4,9 @@ var index = 0;
 
 function tryingsomething() {
     jQuery.get('terms.txt', function(data) {
-      deck = data.val().split("\n");
+      deck = data.split("\n");
     });
+    alert(deck[0][1])
 }
 
 
