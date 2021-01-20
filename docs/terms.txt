@@ -1,0 +1,74 @@
+우의,friendship
+우유,milk
+아이,child
+이,this
+위,above
+노래,song
+개미,ant
+도쿄,tokyo
+씨,see
+도넛,doughnut
+아파트,apartment
+파티,party
+커피,coffee
+남자,man
+여자,woman
+또는,or
+여자들,women
+학교,school
+빵,bread
+사과,apple
+집,house
+책,book
+연필,pencil
+음식,food
+장소,place
+사람,person
+물건,thing
+예,yes
+고양이,cat
+개,dog
+여자아이,girl
+남자아이,boy
+동물,animal
+저의,my
+제가,I
+아니요,no
+예,yes
+산,mountain
+바다,ocean
+공원,park
+한국,korea
+방,room
+길,road
+자동차,car
+차,tea
+가족,family
+신문,newspaper
+공,ball
+친구,friend
+메시지,message
+학생,student
+영회,movie
+재미,fun
+맛,flavor
+멋,coolness
+의미,meaning
+매력,charm
+인기가,popularity
+출신입니다,am from
+가수,singer
+우정,friendship
+네,yes
+이름,name
+고맙습니다,thank you
+고마워,thanks!
+안녕,Hi
+환영합니다,Welcome
+안녕하세요,Hello
+만나서 반갑습니다,Nice to meet you
+안녕하십니까,hello
+죄송합니다,I'm sorry
+괜찮습니다,I'm okay/It's fine
+감사합니다,thank you
+실례합니다,excuse me

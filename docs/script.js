@@ -1,88 +1,17 @@
-var deck = [
     {term:"	우의	",definition1:"	friendship	"},
     {term:"	우유	",definition1:"	milk	"},
     {term:"	아이	",definition1:"	child	"},
-    {term:"	이	",definition1:"	this	"},
-    {term:"	위	",definition1:"	above	"},
-    {term:"	노래	",definition1:"	song	"},
-    {term:"	개미	",definition1:"	ant	"},
-    {term:"	도쿄	",definition1:"	tokyo	"},
-    {term:"	씨	",definition1:"	see	"},
-    {term:"	도넛	",definition1:"	doughnut	"},
-    {term:"	아파트	",definition1:"	apartment	"},
-    {term:"	파티	",definition1:"	party	"},
-    {term:"	커피	",definition1:"	coffee	"},
-    {term:"	남자	",definition1:"	man	"},
-    {term:"	여자	",definition1:"	woman	"},
-    {term:"	또는	",definition1:"	or	"},
-    {term:"	여자들	",definition1:"	women	"},
-    {term:"	학교	",definition1:"	school	"},
-    {term:"	빵	",definition1:"	bread	"},
-    {term:"	사과	",definition1:"	apple	"},
-    {term:"	집	",definition1:"	house	"},
-    {term:"	책	",definition1:"	book	"},
-    {term:"	연필	",definition1:"	pencil	"},
-    {term:"	음식	",definition1:"	food	"},
-    {term:"	장소	",definition1:"	place	"},
-    {term:"	사람	",definition1:"	person	"},
-    {term:"	물건	",definition1:"	thing	"},
-    {term:"	예	",definition1:"	yes	"},
-    {term:"	고양이	",definition1:"	cat	"},
-    {term:"	개	",definition1:"	dog	"},
-    {term:"	여자아이	",definition1:"	girl	"},
-    {term:"	남자아이	",definition1:"	boy	"},
-    {term:"	동물	",definition1:"	animal	"},
-    {term:"	저의	",definition1:"	my	"},
-    {term:"	제가	",definition1:"	I	"},
-    {term:"	아니요	",definition1:"	no	"},
-    {term:"	예	",definition1:"	yes	"},
-    {term:"	산	",definition1:"	mountain	"},
-    {term:"	바다	",definition1:"	ocean	"},
-    {term:"	공원	",definition1:"	park	"},
-    {term:"	한국	",definition1:"	korea	"},
-    {term:"	방	",definition1:"	room	"},
-    {term:"	길	",definition1:"	road	"},
-    {term:"	자동차	",definition1:"	car	"},
-    {term:"	차	",definition1:"	tea	"},
-    {term:"	가족	",definition1:"	family	"},
-    {term:"	신문	",definition1:"	newspaper	"},
-    {term:"	공	",definition1:"	ball	"},
-    {term:"	친구	",definition1:"	friend	"},
-    {term:"	메시지	",definition1:"	message	"},
-    {term:"	학생	",definition1:"	student	"},
-    {term:"	영회	",definition1:"	movie	"},
-    {term:"	재미	",definition1:"	fun	"},
-    {term:"	맛	",definition1:"	flavor	"},
-    {term:"	멋	",definition1:"	coolness	"},
-    {term:"	의미	",definition1:"	meaning	"},
-    {term:"	매력	",definition1:"	charm	"},
-    {term:"	인기가	",definition1:"	popularity	"},
-    {term:"	출신입니다	",definition1:"	am from	"},
-    {term:"	가수	",definition1:"	singer	"},
-    {term:"	우정	",definition1:"	friendship	"},
-    {term:"	네	",definition1:"	yes	"},
-    {term:"	이름	",definition1:"	name	"},
-    {term:"	고맙습니다	",definition1:"	thank you	"},
-    {term:"	고마워	",definition1:"	thanks!	"},
-    {term:"	안녕	",definition1:"	Hi	"},
-    {term:"	환영합니다	",definition1:"	Welcome	"},
-    {term:"	안녕하세요	",definition1:"	Hello	"},
-    {term:"	만나서 반갑습니다	",definition1:"	Nice to meet you	"},
-    {term:"	안녕하십니까	",definition1:"	hello	"},
-    {term:"	죄송합니다	",definition1:"	I'm sorry	"},
-    {term:"	괜찮습니다	",definition1:"	I'm okay/It's fine	"},
-    {term:"	감사합니다	",definition1:"	thank you	"},
-    {term:"	실례합니다	",definition1:"	excuse me	"}
-  ];
 
+var deck = [ ];
 var shuffledDeck = [];
 var index = 0;
 
 function tryingsomething() {
-  jQuery.get('random.txt', function(data) {
-    alert(data);
-  });
+    jQuery.get('random.txt', function(data) {
+      deck = data.val().split("\n");
+    });
 }
+
 
 function shuffle() {
   document.getElementById("shuffleButton").innerHTML = "Shuffle";
@@ -96,11 +25,16 @@ function shuffle() {
   while (tempDeck.length>0){
     var randomNumber = Math.floor(Math.random() * Math.floor(tempDeck.length));
     if((randomNumber >= tempDeck.length) || (randomNumber < 0)) {break;}
-    var currentTerm = tempDeck[randomNumber];
-    var lastTerm = tempDeck[tempDeck.length-1];
-    tempDeck[randomNumber] = lastTerm;
+    var cardInfo = tempDeck[randomNumber].val().split(",");
+    var currentTerm = cardInfo[0];
+    var currentDef = cardInfo[1];
+
+    var lastcardInfo = tempDeck[tempDeck.length-1].val().split(",");
+    var lastTerm = lastcardInfo[0];
+    var lastDef = lastcardInfo[1];
+    tempDeck[randomNumber] = {term:lastTerm,definition1:lastDef};
     tempDeck.pop();
-    shuffledDeck.push(currentTerm);
+    shuffledDeck.push({term:currentTerm,definition1:currentDef});
   }
     //console.log("deck:");
     //console.table(deck);
