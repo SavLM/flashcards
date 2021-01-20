@@ -24,10 +24,11 @@ function shuffle() {
   while (tempDeck.length>0){
     var randomNumber = Math.floor(Math.random() * Math.floor(tempDeck.length));
     if((randomNumber >= tempDeck.length) || (randomNumber < 0) ||  tempDeck[randomNumber].length<=0 ||  tempDeck[tempDeck.length-2]<=0) {break;}
+    alert("temp deck current: ", tempDeck[randomNumber]);
     var cardInfo = tempDeck[randomNumber].split(",");
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
-    alert(tempDeck[tempDeck.length-1]);
+    alert("temp deck last: ", tempDeck[tempDeck.length-1]);
     var lastcardInfo = (tempDeck[tempDeck.length-2]).split(",");
     var lastTerm = lastcardInfo[0];
     var lastDef = lastcardInfo[1];
