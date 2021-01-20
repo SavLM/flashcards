@@ -2,21 +2,14 @@ var deck = [ ];
 var shuffledDeck = [];
 var index = 0;
 
-function tryingsomething() {
-    jQuery.get('terms.txt', function(data) {
-      deck = data.split("\n");
-    });
-    jQuery.get('terms.txt', function(data) {
-      deck = data.split("\n");
-    });
-    deck.pop();
-    console.log("deck:");
-    console.table(deck);
-    //alert(deck[1]);
-}
-
-
 function shuffle() {
+  jQuery.get('terms.txt', function(data) {
+    deck = data.split("\n");
+  });
+  deck.pop();
+  //console.log("deck:");
+  //console.table(deck);
+  //alert(deck[1]);
   document.getElementById("shuffleButton").innerHTML = "Shuffle";
   document.getElementById("shuffleButton").value = "Shuffle";
   document.getElementById("termCard").style.visibility='visible';
@@ -29,15 +22,7 @@ function shuffle() {
   while (tempDeck.length>0){
     console.log("doing something");
     var randomNumber = Math.floor(Math.random() * Math.floor(tempDeck.length));
-    console.log("a: ",tempDeck[randomNumber]);
-    console.log("b ", tempDeck[tempDeck.length-1]);
-    console.log("tempDeck:");
-    console.table(tempDeck);
     if((randomNumber >= tempDeck.length) || (randomNumber < 0) ||  tempDeck[randomNumber].length<=0 ||  tempDeck[tempDeck.length-1]<=0) {break;}
-    console.log("tempDeck:");
-    console.table(tempDeck);
-    console.log("shuffledDeck:");
-    console.table(shuffledDeck);
     var cardInfo = tempDeck[randomNumber].split(",");
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
