@@ -6,6 +6,9 @@ function tryingsomething() {
     jQuery.get('terms.txt', function(data) {
       deck = data.split("\n");
     });
+    jQuery.get('terms.txt', function(data) {
+      deck = data.split("\n");
+    });
     deck.pop();
     console.log("deck:");
     console.table(deck);
