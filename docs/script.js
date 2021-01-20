@@ -6,6 +6,7 @@ function tryingsomething() {
     jQuery.get('terms.txt', function(data) {
       deck = data.split("\n");
     });
+    deck.pop();
     console.log("deck:");
     console.table(deck);
     //alert(deck[1]);
@@ -23,7 +24,7 @@ function shuffle() {
   shuffledDeck = [];
   while (tempDeck.length>0){
     var randomNumber = Math.floor(Math.random() * Math.floor(tempDeck.length));
-    if((randomNumber >= tempDeck.length) || (randomNumber < 0) ||  tempDeck[randomNumber].length<=0 ||  tempDeck[tempDeck.length-2]<=0) {break;}
+    if((randomNumber >= tempDeck.length) || (randomNumber < 0) ||  tempDeck[randomNumber].length<=0 ||  tempDeck[tempDeck.length-1]<=0) {break;}
     console.log("tempDeck:");
     console.table(tempDeck);
     console.log("shuffledDeck:");
@@ -31,7 +32,7 @@ function shuffle() {
     var cardInfo = tempDeck[randomNumber].split(",");
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
-    tempDeck[randomNumber] = tempDeck[tempDeck.length-2];
+    tempDeck[randomNumber] = tempDeck[tempDeck.length-1];
     tempDeck.pop();
     shuffledDeck.push({term:currentTerm,definition1:currentDef});
   }
