@@ -27,7 +27,7 @@ function shuffle() {
     var cardInfo = tempDeck[randomNumber].split(",");
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
-
+    alert(tempDeck[tempDeck.length-1]);
     var lastcardInfo = (tempDeck[tempDeck.length-1]).split(",");
     var lastTerm = lastcardInfo[0];
     var lastDef = lastcardInfo[1];
