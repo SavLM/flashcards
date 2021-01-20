@@ -4,11 +4,11 @@ var index = 0;
 
 function tryingsomething() {
     jQuery.get('terms.txt', function(data) {
-      deck = data.split(",");
+      deck = data.split("\n");
     });
     console.log("deck:");
     console.table(deck);
-    //alert(deck[0][1])
+    alert(deck[0])
 }
 
 
