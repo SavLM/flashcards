@@ -1,7 +1,3 @@
-    {term:"	우의	",definition1:"	friendship	"},
-    {term:"	우유	",definition1:"	milk	"},
-    {term:"	아이	",definition1:"	child	"},
-
 var deck = [ ];
 var shuffledDeck = [];
 var index = 0;
