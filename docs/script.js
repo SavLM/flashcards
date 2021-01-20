@@ -23,6 +23,7 @@ function shuffle() {
   var tempDeck = [ ...deck ];
   shuffledDeck = [];
   while (tempDeck.length>0){
+    console.log("doing something");
     var randomNumber = Math.floor(Math.random() * Math.floor(tempDeck.length));
     if((randomNumber >= tempDeck.length) || (randomNumber < 0) ||  tempDeck[randomNumber].length<=0 ||  tempDeck[tempDeck.length-1]<=0) {break;}
     console.log("tempDeck:");
