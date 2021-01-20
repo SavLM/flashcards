@@ -7,6 +7,7 @@ function tryingsomething() {
       deck = data.val.split("\n");
     });
     alert(deck[0][1])
+    console.log("deck:");
 }
 
 
@@ -33,7 +34,7 @@ function shuffle() {
     tempDeck.pop();
     shuffledDeck.push({term:currentTerm,definition1:currentDef});
   }
-    //console.log("deck:");
+
     //console.table(deck);
     //console.log("shuffled:");
     //console.table(shuffledDeck);
