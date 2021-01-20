@@ -7,7 +7,7 @@ function tryingsomething() {
       deck = data.split("\n");
     });
     console.log("deck:");
-    console.table(deck); 
+    console.table(deck);
     //alert(deck[1]);
 }
 
@@ -23,7 +23,7 @@ function shuffle() {
   shuffledDeck = [];
   while (tempDeck.length>0){
     var randomNumber = Math.floor(Math.random() * Math.floor(tempDeck.length));
-    if((randomNumber >= tempDeck.length) || (randomNumber < 0)) {break;}
+    if((randomNumber >= tempDeck.length) || (randomNumber < 0) ||  tempDeck[randomNumber].length<=0 ||  tempDeck[tempDeck.length-1]<=0) {break;}
     var cardInfo = tempDeck[randomNumber].split(",");
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
