@@ -31,10 +31,7 @@ function shuffle() {
     var cardInfo = tempDeck[randomNumber].split(",");
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
-    var lastcardInfo = (tempDeck[tempDeck.length-2]).split(",");
-    var lastTerm = lastcardInfo[0];
-    var lastDef = lastcardInfo[1];
-    tempDeck[randomNumber] = {term:lastTerm,definition1:lastDef};
+    tempDeck[randomNumber] = tempDeck[tempDeck.length-2];
     tempDeck.pop();
     shuffledDeck.push({term:currentTerm,definition1:currentDef});
   }
