@@ -8,7 +8,7 @@ function tryingsomething() {
     });
     console.log("deck:");
     console.table(deck);
-    alert(deck[0][1])
+    //alert(deck[0][1])
 }
 
 
