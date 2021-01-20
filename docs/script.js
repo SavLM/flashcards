@@ -25,7 +25,7 @@ function shuffle() {
   while (tempDeck.length>0){
     var randomNumber = Math.floor(Math.random() * Math.floor(tempDeck.length));
     if((randomNumber >= tempDeck.length) || (randomNumber < 0)) {break;}
-    var cardInfo = tempDeck[randomNumber].val().split(",");
+    var cardInfo = tempDeck[randomNumber].split(",");
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
 
