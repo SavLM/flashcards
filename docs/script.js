@@ -2,6 +2,11 @@ var deck = [ ];
 var shuffledDeck = [];
 var index = 0;
 
+// jQuery
+$(document).ready( function () {
+  shuffle();
+});
+
 function shuffle() {
   jQuery.get('terms.txt', function(data) {
     deck = data.split("\n");
