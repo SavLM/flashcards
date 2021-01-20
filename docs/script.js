@@ -4,7 +4,7 @@ var index = 0;
 
 function tryingsomething() {
     jQuery.get('terms.txt', function(data) {
-      deck = data.split("\n");
+      deck = data.split(",");
     });
     console.log("deck:");
     console.table(deck);
