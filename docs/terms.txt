@@ -1,4 +1,3 @@
-
 우의,friendship
 우유,milk
 아이,child
