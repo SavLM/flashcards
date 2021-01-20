@@ -27,6 +27,8 @@ function shuffle() {
     var randomNumber = Math.floor(Math.random() * Math.floor(tempDeck.length));
     console.log("a: ",tempDeck[randomNumber]);
     console.log("b ", tempDeck[tempDeck.length-1]);
+    console.log("tempDeck:");
+    console.table(tempDeck);
     if((randomNumber >= tempDeck.length) || (randomNumber < 0) ||  tempDeck[randomNumber].length<=0 ||  tempDeck[tempDeck.length-1]<=0) {break;}
     console.log("tempDeck:");
     console.table(tempDeck);
