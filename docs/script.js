@@ -78,6 +78,12 @@ var deck = [
 var shuffledDeck = [];
 var index = 0;
 
+function tryingsomething() {
+  jQuery.get('random.txt', function(data) {
+    alert(data);
+  });
+}
+
 function shuffle() {
   document.getElementById("shuffleButton").innerHTML = "Shuffle";
   document.getElementById("shuffleButton").value = "Shuffle";
