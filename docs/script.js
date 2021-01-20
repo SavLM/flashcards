@@ -7,8 +7,8 @@ function shuffle() {
     deck = data.split("\n");
   });
   deck.pop();
-  //console.log("deck:");
-  //console.table(deck);
+  console.log("deck:");
+  console.table(deck);
   //alert(deck[1]);
   document.getElementById("shuffleButton").innerHTML = "Shuffle";
   document.getElementById("shuffleButton").value = "Shuffle";
