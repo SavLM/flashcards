@@ -35,8 +35,8 @@ function shuffle() {
   }
 
 
-    //console.log("shuffled:");
-    //console.table(shuffledDeck);
+    console.log("shuffled:");
+    console.table(shuffledDeck);
     index = 0;
     document.getElementById("term").innerHTML = shuffledDeck[index].term;
     document.getElementById("definitionCard").style.visibility='hidden';
