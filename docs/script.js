@@ -4,13 +4,12 @@ var index = 0;
 
 // jQuery
 $(document).ready( function () {
-  shuffle();
+    jQuery.get('terms.txt', function(data) {
+      deck = data.split("\n");
+    });
 });
 
 function shuffle() {
-  jQuery.get('terms.txt', function(data) {
-    deck = data.split("\n");
-  });
   deck.pop();
   console.log("deck:");
   console.table(deck);
