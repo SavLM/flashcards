@@ -11,9 +11,8 @@ $(document).ready( function () {
 
 function shuffle() {
   deck.pop();
-  console.log("deck:");
-  console.table(deck);
-  //alert(deck[1]);
+  //console.log("deck:");
+  //console.table(deck);
   document.getElementById("shuffleButton").innerHTML = "Shuffle";
   document.getElementById("shuffleButton").value = "Shuffle";
   document.getElementById("termCard").style.visibility='visible';
@@ -35,8 +34,8 @@ function shuffle() {
   }
 
 
-    console.log("shuffled:");
-    console.table(shuffledDeck);
+    //console.log("shuffled:");
+    //console.table(shuffledDeck);
     index = 0;
     document.getElementById("term").innerHTML = shuffledDeck[index].term;
     document.getElementById("definitionCard").style.visibility='hidden';
