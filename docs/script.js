@@ -10,7 +10,6 @@ $(document).ready( function () {
 });
 
 function shuffle() {
-  deck.pop();
   console.log("deck:");
   console.table(deck);
   //alert(deck[1]);
@@ -31,7 +30,6 @@ function shuffle() {
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
     tempDeck[randomNumber] = tempDeck[tempDeck.length-1];
-    tempDeck.pop();
     shuffledDeck.push({term:currentTerm,definition1:currentDef});
   }
 
