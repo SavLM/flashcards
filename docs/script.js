@@ -20,7 +20,6 @@ function shuffle() {
   document.getElementById("definitionCard").style.visibility='hidden';
   if(deck.length<=0){return;}
   var tempDeck = [ ...deck ];
-  tempDeck.pop();
   shuffledDeck = [];
   while (tempDeck.length>0){
     console.log("doing something");
@@ -30,6 +29,7 @@ function shuffle() {
     var currentTerm = cardInfo[0];
     var currentDef = cardInfo[1];
     tempDeck[randomNumber] = tempDeck[tempDeck.length-1];
+    tempDeck.pop();
     shuffledDeck.push({term:currentTerm,definition1:currentDef});
   }
 
