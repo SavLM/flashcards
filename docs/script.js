@@ -10,6 +10,7 @@ $(document).ready( function () {
 });
 
 function shuffle() {
+  deck.pop();
   console.log("deck:");
   console.table(deck);
   //alert(deck[1]);
