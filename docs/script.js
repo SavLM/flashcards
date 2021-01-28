@@ -5,12 +5,15 @@ var index = 0;
 
 // jQuery
 $(document).ready( function () {
-    jQuery.get('terms0.txt', function(data) {
+    jQuery.get('terms1.txt', function(data) {
       deck = data.split("\n");
     });
 });
 
 function shuffle(gid){
+  document.getElementById("termCard").style.visibility='hidden';
+  document.getElementById("cardCount").style.visibility='hidden';
+  document.getElementById("definitionCard").style.visibility='hidden';
   if(gid==1) {
     jQuery.get('terms0.txt', function(data) {
       deck = data.split("\n");
