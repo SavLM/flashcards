@@ -24,13 +24,13 @@ function shuffle(gid){
 }
 
 function startflipping() {
-  if(gid==1) {
+  if(deckid==1) {
     jQuery.get('terms0.txt', function(data) {
-      deckid = data.split("\n");
+      deck = data.split("\n");
     });
-  } else if(gid==2) {
+  } else if(deckid==2) {
     jQuery.get('terms1.txt', function(data) {
-      deckid = data.split("\n");
+      deck = data.split("\n");
     });
   }
 
