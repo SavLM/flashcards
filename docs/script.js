@@ -1,3 +1,4 @@
+var deckid = 0;
 var deck = [ ];
 var shuffledDeck = [];
 var index = 0;
@@ -9,7 +10,7 @@ $(document).ready( function () {
     });
 });
 
-function shuffle(gid) {
+function shuffle(gid){
   if(gid==1) {
     jQuery.get('terms0.txt', function(data) {
       deck = data.split("\n");
@@ -19,11 +20,23 @@ function shuffle(gid) {
       deck = data.split("\n");
     });
   }
+  deckid = gid;
+}
+
+function startflipping() {
+  if(gid==1) {
+    jQuery.get('terms0.txt', function(data) {
+      deckid = data.split("\n");
+    });
+  } else if(gid==2) {
+    jQuery.get('terms1.txt', function(data) {
+      deckid = data.split("\n");
+    });
+  }
+
   deck.pop();
   //console.log("deck:");
   //console.table(deck);
-  document.getElementById("shuffleButton1").innerHTML = "Shuffle Group 1";
-  document.getElementById("shuffleButton2").value = "Shuffle Group 2";
   document.getElementById("termCard").style.visibility='visible';
   document.getElementById("cardCount").style.visibility='visible';
   document.getElementById("definitionCard").style.visibility='hidden';
