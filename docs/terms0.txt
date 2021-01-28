@@ -61,14 +61,3 @@
 우정,friendship
 네,yes
 이름,name
-고맙습니다,thank you
-고마워,thanks!
-안녕,Hi
-환영합니다,Welcome
-안녕하세요,Hello
-만나서 반갑습니다,Nice to meet you
-안녕하십니까,hello
-죄송합니다,I'm sorry
-괜찮습니다,I'm okay/It's fine
-감사합니다,thank you
-실례합니다,excuse me
