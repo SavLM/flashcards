@@ -14,7 +14,7 @@ function shuffle(gid) {
     jQuery.get('terms0.txt', function(data) {
       deck = data.split("\n");
     });
-  if(gid==2) {
+  } else if(gid==2) {
     jQuery.get('terms1.txt', function(data) {
       deck = data.split("\n");
     });
